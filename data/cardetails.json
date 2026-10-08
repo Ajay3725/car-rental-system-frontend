@@ -1,0 +1,184 @@
+{
+  "cars": [
+    {
+      "id": 2,
+      "name": "Hyundai",
+      "price": 7800,
+      "image": "/hyundai.avif",
+      "mileage": "25 KM",
+      "seats": "4",
+      "rating": "4.5"
+    },
+    {
+      "id": 3,
+      "name": "Kia",
+      "price": 2800,
+      "image": "/Honda.jpg",
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.7"
+    },
+    {
+      "id": 4,
+      "name": "Honda City",
+      "price": 2000,
+      "image": "/Honda.jpg",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.4"
+    },
+    {
+      "id": 5,
+      "name": "MG Hector",
+      "price": 2800,
+      "image": "/MG Hector.jpg",
+      "mileage": "27 KM",
+      "seats": "5",
+      "rating": "4.6"
+    },
+    {
+      "id": 6,
+      "name": "Maruti Swift",
+      "price": 2500,
+      "image": "/MarutiSwiftt.jpg",
+      "mileage": "23 KM",
+      "seats": "5",
+      "rating": "4.3"
+    },
+    {
+      "id": 7,
+      "name": "Mahindra Thar",
+      "price": 2700,
+      "image": "/maruthithar.jpg",
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.8"
+    },
+    {
+      "id": 8,
+      "name": "Maruti Swift",
+      "price": 8200,
+      "image": "/MarutiSwiftt.jpg",
+      "mileage": "17 KM",
+      "seats": "5",
+      "rating": "4.3"
+    },
+    {
+      "id": 9,
+      "name": "Tata Nexon",
+      "price": "72000",
+      "image": "/Tata Nexon.jpg",
+      "mileage": "24 KM",
+      "seats": "5",
+      "rating": "4.7"
+    },
+    {
+      "id": 10,
+      "name": "Hyundai i20",
+      "price": 2700,
+      "image": "/Hyundai i20.jpg",
+      "mileage": "10 KM",
+      "seats": "5",
+      "rating": "4.5"
+    },
+    {
+      "id": 11,
+      "name": "KiaSonet",
+      "price": 3500,
+      "image": "/KiaSonet.jpg",
+      "mileage": "20 KM",
+      "seats": "5",
+      "rating": "4.6"
+    },
+    {
+      "id": 12,
+      "name": "Honda Amaze",
+      "price": 2700,
+      "image": "/Honda Amaze.jpg",
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.4"
+    },
+    {
+      "id": 13,
+      "name": "MarutiBaleno",
+      "price": 2600,
+      "image": "/MarutiBaleno.jpg",
+      "mileage": "20 KM",
+      "seats": "8",
+      "rating": "4.5"
+    },
+    {
+      "id": 14,
+      "name": "Maruti Swift",
+      "price": 2200,
+      "image": "/MarutiSwiftt.jpg",
+      "mileage": "28 KM",
+      "seats": "6",
+      "rating": "4.3"
+    },
+    {
+      "id": 15,
+      "name": "Mahindra XUV700",
+      "price": 2200,
+      "image": "/Mahindra XUV700.jpg",
+      "mileage": "29 KM",
+      "seats": "5",
+      "rating": "4.8"
+    },
+    {
+      "id": 16,
+      "name": "Toyota Glanza",
+      "price": 2200,
+      "image": "/Toyota Glanza.jpg",
+      "mileage": "27 KM",
+      "seats": "5",
+      "rating": "4.5"
+    },
+    {
+      "id": 17,
+      "name": "Mahindra XUV700",
+      "price": 2800,
+      "image": "/Mahindra XUV700.jpg",
+      "mileage": "20 KM",
+      "seats": "5",
+      "rating": "4.8"
+    },
+    {
+      "id": 18,
+      "name": "Hyundai Venue",
+      "price": 2800,
+      "image": "/Hyundai Venue.jpg",
+      "mileage": "20 KM",
+      "seats": "5",
+      "rating": "4.6"
+    },
+    {
+      "id": 19,
+      "name": "Honda Elevate",
+      "price": 4200,
+      "image": "/Honda Elevate.jpg",
+      "mileage": "20 KM",
+      "seats": "5",
+      "rating": "4.7"
+    },
+    {
+      "id": 20,
+      "name": "Hyundai Venue",
+      "price": 2700,
+      "image": "/Hyundai Venue.jpg",
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.6"
+    },
+    {
+      "id": 1776831279163,
+      "name": "Honda Amaze",
+      "price": 5000,
+      "image": "/Honda Amaze.jpg",
+      "mileage": "17",
+      "seats": "5",
+      "rating": "4.4"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+/* Signup Page */
+.signupPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: rgb(197, 19, 102);
+
+  background-image: url("/redtail.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.signupBox {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.signupBox input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.signupBox button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+/* Admin Page */
+.oiiiii {
+  background-image: url("/luxuriousCAR.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 380px;
+  max-width: 1200px;
+  margin: 15px auto 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.adminBox {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.adminBox input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.adminBox button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}

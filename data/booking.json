@@ -1,0 +1,260 @@
+{
+  "booking": [
+    {
+      "id": 1746812345678,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/kia.avif",
+      "bookedAt": "2026-05-11T10:00:00.000Z"
+    },
+    {
+      "id": 1778504798690,
+      "name": "Honda City",
+      "price": "200",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-05-11T13:06:38.690Z"
+    },
+    {
+      "id": 1778504823345,
+      "name": "Mahindra Thar",
+      "price": 2700,
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.5⭐⭐⭐",
+      "image": "/maruthithar.jpg",
+      "bookedAt": "2026-05-11T13:07:03.345Z"
+    },
+    {
+      "id": 1778504837318,
+      "name": "Mahindra Thar",
+      "price": 2700,
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.5⭐⭐⭐",
+      "image": "/maruthithar.jpg",
+      "bookedAt": "2026-05-11T13:07:17.318Z"
+    },
+    {
+      "id": 1778505287995,
+      "name": "Honda City",
+      "price": "200",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-05-11T13:14:47.995Z"
+    },
+    {
+      "id": 1778505762484,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/kia.avif",
+      "bookedAt": "2026-05-11T13:22:42.484Z"
+    },
+    {
+      "id": 1778505954482,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/kia.avif",
+      "bookedAt": "2026-05-11T13:25:54.482Z"
+    },
+    {
+      "id": 1778767282045,
+      "price": "200",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-05-14T14:01:22.045Z"
+    },
+    {
+      "id": 1778767328059,
+      "price": "200",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-05-14T14:02:08.059Z"
+    },
+    {
+      "id": 1778937832585,
+      "name": "Hyundai",
+      "price": 7800,
+      "mileage": "25 KM",
+      "seats": "4",
+      "rating": "4.5 ⭐⭐⭐",
+      "image": "/hyundai.avif",
+      "bookedAt": "2026-05-16T13:23:52.585Z"
+    },
+    {
+      "id": 1778937969570,
+      "name": "Mahindra Thar",
+      "price": 2700,
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.5⭐⭐⭐",
+      "image": "/maruthithar.jpg",
+      "bookedAt": "2026-05-16T13:26:09.570Z"
+    },
+    {
+      "id": 1779199083264,
+      "price": "200",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-05-19T13:58:03.264Z"
+    },
+    {
+      "id": 1779375863288,
+      "name": "Mahindra Thar",
+      "price": 2700,
+      "mileage": "28 KM",
+      "seats": "5",
+      "rating": "4.5⭐⭐⭐",
+      "image": "/maruthithar.jpg",
+      "bookedAt": "2026-05-21T15:04:23.288Z"
+    },
+    {
+      "id": 1779376348496,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/Kia.avif",
+      "bookedAt": "2026-05-21T15:12:28.496Z"
+    },
+    {
+      "id": 1787055240536,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/Kia.avif",
+      "bookedAt": "2026-08-18T12:14:00.536Z"
+    },
+    {
+      "id": 1787055307657,
+      "name": "Hyundai",
+      "price": 7800,
+      "mileage": "25 KM",
+      "seats": "4",
+      "rating": "4.5 ⭐⭐⭐",
+      "image": "/hyundai.avif",
+      "bookedAt": "2026-08-18T12:15:07.657Z"
+    },
+    {
+      "id": 1787055679089,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/Kia.avif",
+      "bookedAt": "2026-08-18T12:21:19.089Z"
+    },
+    {
+      "id": 1787063656377,
+      "name": "Kia",
+      "price": 2800,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐⭐⭐⭐",
+      "image": "/Kia.avif",
+      "bookedAt": "2026-08-18T14:34:16.377Z"
+    },
+    {
+      "id": 1787063714327,
+      "name": "Mahindra XUV700",
+      "price": 2800,
+      "mileage": "20 KM",
+      "seats": "5",
+      "rating": "4.5⭐⭐⭐⭐⭐",
+      "image": "/Mahindra XUV700.jpg",
+      "bookedAt": "2026-08-18T14:35:14.327Z"
+    },
+    {
+      "id": 1787066830900,
+      "price": "200",
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.5 ⭐⭐",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-08-18T15:27:10.900Z"
+    },
+    {
+      "id": 1787067735087,
+      "name": "Mahindra XUV700",
+      "price": 2090,
+      "mileage": "29 KM",
+      "seats": "5",
+      "rating": "4.8",
+      "image": "/Mahindra XUV700.jpg",
+      "bookedAt": "2026-08-18T15:42:15.087Z"
+    },
+    {
+      "id": 1787067904523,
+      "name": "Honda City",
+      "price": 1900,
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.4",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-08-18T15:45:04.523Z"
+    },
+    {
+      "id": 1787068022972,
+      "name": "Hyundai",
+      "price": 7020,
+      "mileage": "25 KM",
+      "seats": "4",
+      "rating": "4.5",
+      "image": "/hyundai.avif",
+      "bookedAt": "2026-08-18T15:47:02.972Z"
+    },
+    {
+      "id": 1787111978218,
+      "name": "Kia",
+      "price": 2660,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.7",
+      "image": "/kia.avif",
+      "bookedAt": "2026-08-19T03:59:38.218Z"
+    },
+    {
+      "id": 1787116654763,
+      "name": "Honda City",
+      "price": 1900,
+      "mileage": "19 KM",
+      "seats": "5",
+      "rating": "4.4",
+      "image": "/Honda.jpg",
+      "bookedAt": "2026-08-19T05:17:34.763Z"
+    },
+    {
+      "id": 1787371324684,
+      "name": "Kia",
+      "price": 2660,
+      "mileage": "25 KM",
+      "seats": "5",
+      "rating": "4.7",
+      "image": "/kia.avif",
+      "bookedAt": "2026-08-22T04:02:04.684Z"
+    }
+  ]
+}
