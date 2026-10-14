@@ -53,18 +53,26 @@ export function getDatabaseErrorMessage(error: unknown): string {
     typeof error.code === "string"
       ? error.code
       : undefined;
+
+  const message =
+    typeof error === "object" && error !== null && "message" in error &&
+    typeof error.message === "string"
+      ? error.message
+      : "";
+
   switch (code) {
     case "ER_ACCESS_DENIED_ERROR":
-      return "MySQL rejected the configured username or password. Check DATABASE_URL in .env.local.";
+      return `MySQL rejected credentials (${message}). Check username and password in Railway.`;
     case "ER_BAD_DB_ERROR":
-      return "The MySQL database does not exist. Run database/create-database.sql in MySQL Workbench.";
+      return `The database does not exist (${message}). Check database name in Railway.`;
     case "ER_TABLEACCESS_DENIED_ERROR":
-      return "The MySQL account needs SELECT, INSERT, UPDATE, DELETE, CREATE, and REFERENCES permissions on car_rental.";
+      return `The MySQL account lacks permissions (${message}).`;
     case "ECONNREFUSED":
     case "ETIMEDOUT":
-      return "Cannot reach MySQL. Check that the MySQL service is running and DATABASE_URL has the correct host and port.";
+    case "ENOTFOUND":
+      return `Cannot reach MySQL (${code}: ${message}). Ensure MySQL service is online and latest variables are deployed.`;
     default:
-      return "Database initialization failed. Check the Next.js terminal for details.";
+      return `Database error (${code || "UNKNOWN"}): ${message || "Check Railway deployment logs."}`;
   }
 }
 
@@ -258,34 +266,62 @@ async function initialize(database: Pool) {
   }
 }
 
-function poolOptions(connectionString: string) {
-  const url = new URL(connectionString);
-  if (url.protocol !== "mysql:" || !url.hostname || !url.pathname.slice(1)) {
-    throw new Error("DATABASE_URL must be a MySQL URL with a host and database name.");
+function poolOptions() {
+  const connectionString =
+    process.env.DATABASE_URL ||
+    process.env.MYSQL_URL ||
+    process.env.MYSQL_PUBLIC_URL;
+
+  if (connectionString) {
+    try {
+      const url = new URL(connectionString);
+      return {
+        host: url.hostname,
+        port: Number(url.port || 3306),
+        user: decodeURIComponent(url.username),
+        password: decodeURIComponent(url.password),
+        database: decodeURIComponent(url.pathname.slice(1)),
+        waitForConnections: true,
+        connectionLimit: 10,
+        connectTimeout: 15000,
+        enableKeepAlive: true,
+      };
+    } catch {
+      // Fall through to individual environment variables
+    }
   }
 
-  return {
-    host: url.hostname,
-    port: Number(url.port || 3306),
-    user: decodeURIComponent(url.username),
-    password: decodeURIComponent(url.password),
-    database: decodeURIComponent(url.pathname.slice(1)),
-    waitForConnections: true,
-    connectionLimit: 10,
-  };
+  const host = process.env.MYSQLHOST || process.env.DB_HOST;
+  const port = Number(process.env.MYSQLPORT || process.env.DB_PORT || 3306);
+  const user = process.env.MYSQLUSER || process.env.DB_USER;
+  const password = process.env.MYSQLPASSWORD || process.env.DB_PASSWORD || "";
+  const database = process.env.MYSQLDATABASE || process.env.DB_NAME;
+
+  if (host && user && database) {
+    return {
+      host,
+      port,
+      user,
+      password,
+      database,
+      waitForConnections: true,
+      connectionLimit: 10,
+      connectTimeout: 15000,
+      enableKeepAlive: true,
+    };
+  }
+
+  throw new DatabaseConfigurationError(
+    "MySQL is not configured. Set DATABASE_URL or link MySQL in Railway Variables."
+  );
 }
 
 export async function getDb(): Promise<Pool> {
-  if (!process.env.DATABASE_URL) {
-    throw new DatabaseConfigurationError(
-      "MySQL is not configured. Set DATABASE_URL in .env.local."
-    );
-  }
-
-  pool ??= createPool(poolOptions(process.env.DATABASE_URL));
+  pool ??= createPool(poolOptions());
   if (!ready) {
     ready = initialize(pool).catch((error: unknown) => {
       ready = undefined;
+      console.error("Database connection initialization failed:", error);
       throw error;
     });
   }
